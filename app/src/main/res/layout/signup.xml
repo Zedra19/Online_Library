@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_daftar">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signup"
+        android:textAppearance="@style/signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="48dp" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="282dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/isian"
+        android:gravity="left|center"
+        android:paddingStart="16sp"
+        android:hint="@string/username"
+        android:textAppearance="@style/isian"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        />
+
+    <EditText
+        android:id="@+id/fullname"
+        android:layout_width="282dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/isian"
+        android:gravity="left|center"
+        android:paddingStart="16sp"
+        android:hint="@string/fullname"
+        android:textColorHint="#000000"
+        android:textAppearance="@style/isian"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/username" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="282dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/isian"
+        android:gravity="left|center"
+        android:paddingStart="16sp"
+        android:hint="@string/email"
+        android:textAppearance="@style/isian"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fullname" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="282dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/isian"
+        android:gravity="left|center"
+        android:paddingStart="16sp"
+        android:hint="@string/address"
+        android:textAppearance="@style/isian"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email" />
+
+    <EditText
+        android:id="@+id/phonenumber"
+        android:layout_width="282dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/isian"
+        android:gravity="left|center"
+        android:paddingStart="16sp"
+        android:hint="@string/phonenumber"
+        android:textColorHint="#000000"
+        android:textAppearance="@style/isian"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/address" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="282dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/isian"
+        android:gravity="left|center"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingStart="16sp"
+        android:textAppearance="@style/isian"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phonenumber" />
+
+    <CheckBox
+        android:id="@+id/terms_condition"
+        android:layout_width="281dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/terms_condition"
+        android:textAppearance="@style/inter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password" />
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/bg"-->
+    <!--        android:layout_width="435dp"-->
+    <!--        android:layout_height="251dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="1.0"-->
+    <!--        app:srcCompat="@drawable/bg_daftar" />-->
+
+    <Button
+        android:id="@+id/button_signup"
+        android:layout_width="282dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/button_signup"
+        android:gravity="center_horizontal|center"
+        android:text="@string/signup"
+        android:textAppearance="@style/poppins"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/terms_condition" />
+
+    <Button
+        android:id="@+id/button_signin"
+        android:layout_width="282dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/button_signup"
+        android:gravity="center_horizontal|center"
+        android:text="@string/signin"
+        android:textAppearance="@style/poppins"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_signup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

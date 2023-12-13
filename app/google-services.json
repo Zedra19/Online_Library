@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "222575247499",
+    "firebase_url": "https://onlib-rpl-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "onlib-rpl",
+    "storage_bucket": "onlib-rpl.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222575247499:android:999945ed956defa7b2548e",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbzMQWf940zpKdJx8C9CnIGASPaC-xayk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

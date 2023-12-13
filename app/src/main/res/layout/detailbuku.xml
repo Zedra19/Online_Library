@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/like"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:gravity="center_vertical"
+        android:text="@string/jumlah_like"
+        android:textAppearance="@style/poppins"
+        android:textColor="#404040"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="273dp"
+        tools:layout_editor_absoluteY="623dp" />
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:gravity="center_vertical"
+        android:text="@string/user1"
+        android:textAppearance="@style/poppins"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="668dp" />
+
+    <TextView
+        android:id="@+id/isi_review3"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="left|top"
+        android:text="2 Jam Lalu"
+        android:textAppearance="@style/inter"
+        android:textColor="#808080"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="670dp" />
+
+    <TextView
+        android:id="@+id/isi_review2"
+        android:layout_width="145dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="left|top"
+        android:text="@string/isi_review"
+        android:textAppearance="@style/inter"
+        android:textColor="#404040"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="693dp" />
+
+    <View
+        android:id="@+id/cover_detail"
+        android:layout_width="147dp"
+        android:layout_height="247dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/coverdetail"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="125dp" />
+
+    <View
+        android:id="@+id/cover_detail2"
+        android:layout_width="37dp"
+        android:layout_height="34dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/coverdetail"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="668dp" />
+
+    <TextView
+        android:id="@+id/penerbit"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="left|center"
+        android:text="@string/penulis"
+        android:textAppearance="@style/detail_buku"
+        tools:layout_editor_absoluteX="232dp"
+        tools:layout_editor_absoluteY="154dp" />
+
+    <TextView
+        android:id="@+id/tanggal_terbit"
+        android:layout_width="110dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="left|center"
+        android:text="@string/tanggal_terbit"
+        android:textAppearance="@style/detail_buku"
+        tools:layout_editor_absoluteX="233dp"
+        tools:layout_editor_absoluteY="289dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:srcCompat="@drawable/icon_penerbit"
+        tools:layout_editor_absoluteX="198dp"
+        tools:layout_editor_absoluteY="156dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:srcCompat="@drawable/icon_bahasa"
+        tools:layout_editor_absoluteX="198dp"
+        tools:layout_editor_absoluteY="246dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:srcCompat="@drawable/icon_jumlah_halaman"
+        tools:layout_editor_absoluteX="198dp"
+        tools:layout_editor_absoluteY="201dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:srcCompat="@drawable/icon_tanggal_terbit"
+        tools:layout_editor_absoluteX="198dp"
+        tools:layout_editor_absoluteY="291dp" />
+
+    <TextView
+        android:id="@+id/bahasa"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="left|center"
+        android:text="@string/bahasa"
+        android:textAppearance="@style/detail_buku"
+        tools:layout_editor_absoluteX="232dp"
+        tools:layout_editor_absoluteY="244dp" />
+
+    <TextView
+        android:id="@+id/jumlah_halaman"
+        android:layout_width="110dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="left|center"
+        android:text="@string/jumlah_halaman"
+        android:textAppearance="@style/detail_buku"
+        tools:layout_editor_absoluteX="232dp"
+        tools:layout_editor_absoluteY="199dp" />
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="147dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal|top"
+        android:text="@string/judul"
+        android:textAppearance="@style/detail_buku"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="403dp" />
+
+    <TextView
+        android:id="@+id/button_baca"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_signup"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/baca"
+        android:textAppearance="@style/poppins"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="552dp" />
+
+    <TextView
+        android:id="@+id/button_pinjam"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_signup"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/pinjam"
+        android:textAppearance="@style/poppins"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="219dp"
+        tools:layout_editor_absoluteY="552dp" />
+
+    <TextView
+        android:id="@+id/isi_summary"
+        android:layout_width="343dp"
+        android:layout_height="83dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="left|top"
+        android:justificationMode="inter_word"
+        android:text="@string/isi_summary"
+        android:textAppearance="@style/inter"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="450dp" />
+
+    <View
+        android:id="@+id/rectangle_1"
+        android:layout_width="393dp"
+        android:layout_height="91dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-1dp"
+        android:background="#163062" />
+
+    <TextView
+        android:id="@+id/detail_buku"
+        android:layout_width="103dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="left|top"
+        android:text="@string/detail_buku"
+        android:textAppearance="@style/lexend"
+        android:textColor="#E7EBFE"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        app:srcCompat="@drawable/icon_cart"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <TextView
+        android:id="@+id/review"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:gravity="center_vertical"
+        android:text="@string/jumlah_review"
+        android:textAppearance="@style/poppins"
+        android:textColor="#163062"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="623dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/icon_like"
+        tools:layout_editor_absoluteX="233dp"
+        tools:layout_editor_absoluteY="621dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/icon_review"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="621dp" />
+
+    <TextView
+        android:id="@+id/taskbar"
+        android:layout_width="393dp"
+        android:layout_height="77dp"
+        android:background="@drawable/taskbar"
+        android:gravity="center_horizontal|center"
+        android:text="@string/signin"
+        android:textAppearance="@style/poppins"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="776dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="24dp"
+        android:layout_height="22dp"
+        app:srcCompat="@drawable/icon_home"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="798dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="18dp"
+        android:layout_height="19dp"
+        app:layout_constraintEnd_toStartOf="@+id/taskbar"
+        app:layout_constraintHorizontal_bias="0.685"
+        app:layout_constraintStart_toEndOf="@+id/taskbar"
+        app:srcCompat="@drawable/icon_book"
+        tools:layout_editor_absoluteY="801dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="24dp"
+        android:layout_height="22dp"
+        app:srcCompat="@drawable/icon_bookmark"
+        tools:layout_editor_absoluteX="184dp"
+        tools:layout_editor_absoluteY="799dp" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="24dp"
+        android:layout_height="22dp"
+        app:srcCompat="@drawable/icon_message"
+        tools:layout_editor_absoluteX="262dp"
+        tools:layout_editor_absoluteY="799dp" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="24dp"
+        android:layout_height="22dp"
+        app:srcCompat="@drawable/icon_user"
+        tools:layout_editor_absoluteX="342dp"
+        tools:layout_editor_absoluteY="798dp" />
+
+    <TextView
+        android:id="@+id/home_taskbar"
+        android:layout_width="36dp"
+        android:layout_height="15dp"
+        android:gravity="top"
+        android:text="@string/home"
+        android:textAppearance="@style/taskbar_nyala"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="823dp" />
+
+    <TextView
+        android:id="@+id/home_taskbar3"
+        android:layout_width="48dp"
+        android:layout_height="15dp"
+        android:gravity="top"
+        android:text="@string/katalog"
+        android:textAppearance="@style/taskbar_ganyala"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="823dp" />
+
+    <TextView
+        android:id="@+id/home_taskbar4"
+        android:layout_width="48dp"
+        android:layout_height="15dp"
+        android:gravity="top"
+        android:text="@string/dipinjam"
+        android:textAppearance="@style/taskbar_ganyala"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="823dp" />
+
+    <TextView
+        android:id="@+id/home_taskbar5"
+        android:layout_width="48dp"
+        android:layout_height="15dp"
+        android:gravity="top"
+        android:text="@string/review2"
+        android:textAppearance="@style/taskbar_ganyala"
+        tools:layout_editor_absoluteX="255dp"
+        tools:layout_editor_absoluteY="823dp" />
+
+    <TextView
+        android:id="@+id/home_taskbar6"
+        android:layout_width="48dp"
+        android:layout_height="15dp"
+        android:gravity="top"
+        android:text="@string/akun"
+        android:textAppearance="@style/taskbar_ganyala"
+        tools:layout_editor_absoluteX="331dp"
+        tools:layout_editor_absoluteY="823dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
