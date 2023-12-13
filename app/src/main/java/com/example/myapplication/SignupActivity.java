@@ -46,13 +46,13 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (checkValidasi()){
-                    mDatabase.child("User").child("Address").setValue(inputAddress);
-                    mDatabase.child("User").child("Email").setValue(inputEmail);
-                    mDatabase.child("User").child("Fullname").setValue(inputFullname);
+                    mDatabase.child("User").child("Address").setValue(inputAddress.getText().toString());
+                    mDatabase.child("User").child("Email").setValue(inputEmail.getText().toString());
+                    mDatabase.child("User").child("Fullname").setValue(inputFullname.getText().toString());
                     mDatabase.child("User").child("ID").setValue(1);
-                    mDatabase.child("User").child("Password").setValue(inputPassword);
-                    mDatabase.child("User").child("Phone Number").setValue(inputPhoneNumber);
-                    mDatabase.child("User").child("Username").setValue(inputUsername);
+                    mDatabase.child("User").child("Password").setValue(inputPassword.getText().toString());
+                    mDatabase.child("User").child("Phone Number").setValue(inputPhoneNumber.getText().toString());
+                    mDatabase.child("User").child("Username").setValue(inputUsername.getText().toString());
                     Intent intent = new Intent(SignupActivity.this, HomepageActivity.class);
                     startActivity(intent);
                 }
