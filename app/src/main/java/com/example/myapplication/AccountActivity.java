@@ -7,7 +7,6 @@ import android.view.Window;
 import android.view.WindowManager;
 
 public class AccountActivity extends AppCompatActivity {
-    private boolean akmal = true;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
