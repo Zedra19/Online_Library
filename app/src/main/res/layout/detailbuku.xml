@@ -392,13 +392,15 @@
 
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="18dp"
-        android:layout_height="19dp"
-        app:layout_constraintEnd_toStartOf="@+id/taskbar"
-        app:layout_constraintHorizontal_bias="0.685"
-        app:layout_constraintStart_toEndOf="@+id/taskbar"
-        app:srcCompat="@drawable/icon_book"
-        tools:layout_editor_absoluteY="801dp" />
+        android:layout_width="22dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/home_taskbar3"
+        app:layout_constraintEnd_toStartOf="@+id/imageView10"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:srcCompat="@drawable/icon_book" />
 
     <ImageView
         android:id="@+id/imageView10"
