@@ -12,6 +12,7 @@ import android.widget.ImageButton;
 public class HomepageActivity extends AppCompatActivity {
 
     ImageButton katalog, dipinjam, review, akun;
+    ImageButton buku1, buku2, buku3, buku4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +25,20 @@ public class HomepageActivity extends AppCompatActivity {
         dipinjam = findViewById(R.id.imageDipinjam);
         review = findViewById(R.id.imageReview);
         akun = findViewById(R.id.imageAccount);
+
+        buku1 = findViewById(R.id.matahari);
+        buku2 = findViewById(R.id.filTeras);
+        buku3 = findViewById(R.id.dearJohn);
+        buku4 = findViewById(R.id.harrypot);
+
+        buku1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomepageActivity.this, DetailBukuActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         katalog.setOnClickListener(new View.OnClickListener() {
             @Override

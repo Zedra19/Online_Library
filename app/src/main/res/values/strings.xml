@@ -35,4 +35,5 @@
     <string name="review2">Review</string>
     <string name="akun">Account</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_detail_buku">DetailBukuActivity</string>
 </resources>
