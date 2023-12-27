@@ -92,22 +92,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/selamat_dat" />
 
+
     <TextView
         android:id="@+id/buku_trendi"
         android:layout_width="148dp"
         android:layout_height="24dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_marginTop="268dp"
+        android:layout_marginTop="264dp"
         android:gravity="center_horizontal|top"
         android:text="Buku Trending"
         android:textAppearance="@style/buku_trendi"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.065"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-
 
     <ImageView
         android:id="@+id/imageHome"
@@ -237,10 +236,13 @@
         app:layout_constraintStart_toEndOf="@+id/reviewtext" />
 
     <ScrollView
-        android:layout_width="372dp"
-        android:layout_height="514dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="306dp">
+        android:layout_width="375dp"
+        android:layout_height="468dp"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/taskbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buku_trendi">
 
         <GridLayout
             android:layout_width="match_parent"

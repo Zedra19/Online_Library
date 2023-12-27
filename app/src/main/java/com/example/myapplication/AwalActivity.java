@@ -31,7 +31,5 @@ public class AwalActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
     }
 }
