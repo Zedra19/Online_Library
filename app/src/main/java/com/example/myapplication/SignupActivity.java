@@ -44,11 +44,11 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (checkValidasi()){
-                    mDatabase.child("User").child("Email").setValue(inputEmail.getText().toString());
-                    mDatabase.child("User").child("Fullname").setValue(inputFullname.getText().toString());
-                    mDatabase.child("User").child("Password").setValue(inputPassword.getText().toString());
-                    mDatabase.child("User").child("Phone Number").setValue(inputPhoneNumber.getText().toString());
-                    mDatabase.child("User").child("Address").setValue(inputAddress.getText().toString());
+                    mDatabase.child("User").child(inputUsername.getText().toString()).child("Email").setValue(inputEmail.getText().toString());
+                    mDatabase.child("User").child(inputUsername.getText().toString()).child("Fullname").setValue(inputFullname.getText().toString());
+                    mDatabase.child("User").child(inputUsername.getText().toString()).child("Password").setValue(inputPassword.getText().toString());
+                    mDatabase.child("User").child(inputUsername.getText().toString()).child("Phone Number").setValue(inputPhoneNumber.getText().toString());
+                    mDatabase.child("User").child(inputUsername.getText().toString()).child("Address").setValue(inputAddress.getText().toString());
                     Intent intent = new Intent(SignupActivity.this, HomepageActivity.class);
                     startActivity(intent);
                 }
