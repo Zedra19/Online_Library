@@ -60,14 +60,14 @@ public class SigninActivity extends AppCompatActivity {
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         if(snapshot.child(username).exists()){
                             if(snapshot.child(username).child("Password").getValue(String.class).equals(password)){
-                                Toast.makeText(getApplicationContext(), "login successfull", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "Login Successful", Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(SigninActivity.this, HomepageActivity.class);
                                 startActivity(intent);
                             } else{
-                                Toast.makeText(getApplicationContext(), "username or password is incorrect", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "Username or Password is Incorrect.", Toast.LENGTH_SHORT).show();
                             }
                         } else{
-                            Toast.makeText(getApplicationContext(), "username or password is incorrect", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "Username or Password is Incorrect.", Toast.LENGTH_SHORT).show();
                         }
                     }
 
