@@ -8,9 +8,11 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 public class AccountActivity extends AppCompatActivity {
     ImageButton home, katalog, dipinjam, review;
+    ImageView keluar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +26,7 @@ public class AccountActivity extends AppCompatActivity {
         katalog = findViewById(R.id.imageKatalog);
         dipinjam = findViewById(R.id.imageDipinjam);
         review = findViewById(R.id.imageReview);
+        keluar = findViewById(R.id.keluar);
 
         home.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,6 +56,14 @@ public class AccountActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(AccountActivity.this, ReviewActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        keluar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AccountActivity.this, AwalActivity.class);
                 startActivity(intent);
             }
         });

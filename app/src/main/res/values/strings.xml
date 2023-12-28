@@ -36,4 +36,8 @@
     <string name="akun">Akun</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_detail_buku">DetailBukuActivity</string>
+    <string name="usernameAkun">username</string>
+    <string name="AnggotaPerpus">Anggota Perpustakaan</string>
+    <string name="termscondtext">Terms and Condition</string>
+    <string name="keluarAkun">Keluar</string>
 </resources>

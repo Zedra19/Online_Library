@@ -32,7 +32,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
+    <ImageView
         android:id="@+id/carticon"
         android:layout_width="40dp"
         android:layout_height="40dp"
@@ -65,6 +65,7 @@
             android:scaleType="centerCrop"
             android:src="@drawable/chatprofile" />
     </androidx.cardview.widget.CardView>
+
     <TextView
         android:id="@+id/taskbar"
         android:layout_width="0dp"
@@ -203,25 +204,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:text="Username"
+        android:text="@string/usernameAkun"
         android:textAppearance="@style/taskbar_ganyala"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView"
-        tools:textSize="30dp" />
+        tools:textSize="30" />
 
     <TextView
         android:id="@+id/user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:text="Anggota Perpustakaan"
+        android:text="@string/AnggotaPerpus"
         android:textAppearance="@style/taskbar_ganyala"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/username"
-        tools:textSize="25dp" />
+        tools:textSize="25" />
 
 
     <TextView
@@ -229,20 +230,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
-        android:text="Terms and Conditions"
+        android:layout_marginBottom="87dp"
+        android:text="@string/termscondtext"
         android:textAppearance="@style/taskbar_ganyala"
+        app:layout_constraintBottom_toTopOf="@+id/taskbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/user"
-        tools:textSize="25dp" />
+        tools:textSize="25" />
 
     <ImageView
         android:id="@+id/keluar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="25dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rectangle_1"
         app:srcCompat="@drawable/sendicon"
@@ -252,11 +255,13 @@
         android:id="@+id/textKeluar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Keluar"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="23dp"
+        android:text="@string/keluarAkun"
         android:textAppearance="@style/taskbar_ganyala"
         android:textColor="#163062"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="99dp"
-        tools:textSize="25dp" />
+        app:layout_constraintStart_toEndOf="@+id/keluar"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_1"
+        tools:textSize="25" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
