@@ -23,11 +23,11 @@
         android:layout_height="47dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="25dp"
         android:background="@drawable/isian"
         android:gravity="left|center"
-        android:paddingStart="16sp"
         android:hint="@string/username"
+        android:paddingStart="16sp"
         android:textAppearance="@style/isian"
         android:textColorHint="#000000"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,7 +39,7 @@
         android:id="@+id/password"
         android:layout_width="282dp"
         android:layout_height="47dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="25dp"
         android:background="@drawable/isian"
         android:gravity="left|center"
         android:hint="@string/password"
@@ -54,9 +54,9 @@
 
     <CheckBox
         android:id="@+id/terms_condition"
-        android:layout_width="125dp"
+        android:layout_width="wrap_content"
         android:layout_height="35dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="25dp"
         android:text="@string/rememberme"
         android:textAppearance="@style/inter"
         app:layout_constraintEnd_toEndOf="parent"
@@ -66,15 +66,15 @@
 
     <TextView
         android:id="@+id/forgot_password"
-        android:layout_width="103dp"
+        android:layout_width="wrap_content"
         android:layout_height="15dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="35dp"
         android:text="@string/forgot_pass"
         android:textAppearance="@style/forgot"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.806"
+        app:layout_constraintHorizontal_bias="0.80"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/password" />
 
@@ -82,32 +82,29 @@
         android:id="@+id/button_signup"
         android:layout_width="282dp"
         android:layout_height="47dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/button_signup"
         android:gravity="center_horizontal|center"
         android:text="@string/signup"
         android:textAppearance="@style/poppins"
         android:textSize="12sp"
-        app:layout_constraintTop_toBottomOf="@id/button_signin"
-        tools:layout_editor_absoluteX="55dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_signin" />
 
     <Button
         android:id="@+id/button_signin"
         android:layout_width="282dp"
         android:layout_height="47dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="120dp"
         android:background="@drawable/button_signup"
         android:gravity="center_horizontal|center"
         android:text="@string/signin"
         android:textAppearance="@style/poppins"
         android:textSize="12sp"
-        app:layout_constraintTop_toBottomOf="@id/password"
-        tools:layout_editor_absoluteX="55dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        />
+        app:layout_constraintTop_toBottomOf="@id/password" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
