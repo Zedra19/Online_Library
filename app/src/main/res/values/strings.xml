@@ -29,11 +29,11 @@
     <string name="user1">Putri Ayu</string>
     <string name="jumlah_review">1 Review</string>
     <string name="jumlah_like">1000 Like</string>
-    <string name="home">Home</string>
+    <string name="home">Beranda</string>
     <string name="katalog">Katalog</string>
     <string name="dipinjam">Dipinjam</string>
-    <string name="review2">Review</string>
-    <string name="akun">Account</string>
+    <string name="review2">Ulasan</string>
+    <string name="akun">Akun</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_detail_buku">DetailBukuActivity</string>
 </resources>
