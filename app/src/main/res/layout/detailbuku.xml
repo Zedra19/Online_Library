@@ -363,127 +363,125 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="24dp"
-        android:layout_height="22dp"
-        android:layout_marginBottom="36dp"
-        app:layout_constraintBottom_toBottomOf="@+id/taskbar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.089"
+    <ImageButton
+        android:id="@+id/imageHome"
+        android:layout_width="32dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/hometext"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/icon_home" />
+        app:layout_constraintTop_toTopOf="@+id/taskbar"
+        app:srcCompat="@drawable/home_not" />
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="22dp"
-        android:layout_height="23dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginEnd="57dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/home_taskbar3"
-        app:layout_constraintEnd_toStartOf="@+id/imageView10"
-        app:layout_constraintStart_toEndOf="@+id/imageView8"
-        app:srcCompat="@drawable/icon_book" />
+    <ImageButton
+        android:id="@+id/imageKatalog"
+        android:layout_width="32dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/katalogtext"
+        app:layout_constraintStart_toEndOf="@+id/imageHome"
+        app:layout_constraintTop_toTopOf="@+id/taskbar"
+        app:srcCompat="@drawable/book_selected" />
 
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="24dp"
-        android:layout_height="22dp"
-        android:layout_marginBottom="36dp"
-        app:layout_constraintBottom_toBottomOf="@+id/taskbar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
+    <ImageButton
+        android:id="@+id/imageDipinjam"
+        android:layout_width="32dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/dipinjamtext"
+        app:layout_constraintStart_toEndOf="@+id/imageKatalog"
+        app:layout_constraintTop_toTopOf="@+id/taskbar"
         app:srcCompat="@drawable/icon_bookmark" />
 
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="24dp"
-        android:layout_height="22dp"
-        app:layout_constraintBottom_toBottomOf="@+id/home_taskbar5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.715"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976"
+    <ImageButton
+        android:id="@+id/imageReview"
+        android:layout_width="32dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/reviewtext"
+        app:layout_constraintStart_toEndOf="@+id/imageDipinjam"
+        app:layout_constraintTop_toTopOf="@+id/taskbar"
+        app:layout_constraintVertical_bias="0.6"
         app:srcCompat="@drawable/icon_message" />
 
-    <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="24dp"
-        android:layout_height="22dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.913"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.961"
+    <ImageButton
+        android:id="@+id/imageAccount"
+        android:layout_width="32dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/accounttext"
+        app:layout_constraintStart_toEndOf="@+id/imageReview"
+        app:layout_constraintTop_toTopOf="@+id/taskbar"
         app:srcCompat="@drawable/icon_user" />
 
     <TextView
-        android:id="@+id/home_taskbar"
+        android:id="@+id/hometext"
         android:layout_width="45dp"
-        android:layout_height="16dp"
-        android:layout_marginBottom="12dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginBottom="14dp"
         android:gravity="top"
         android:text="@string/home"
-        android:textAppearance="@style/taskbar_nyala"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.078"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/home_taskbar3"
-        android:layout_width="48dp"
-        android:layout_height="15dp"
-        android:layout_marginBottom="12dp"
-        android:gravity="top"
-        android:text="@string/katalog"
         android:textAppearance="@style/taskbar_ganyala"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.266"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/home_taskbar4"
+        android:id="@+id/katalogtext"
+        android:layout_width="42dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="14dp"
+        android:gravity="top"
+        android:text="@string/katalog"
+        android:textAppearance="@style/taskbar_nyala"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hometext" />
+
+    <TextView
+        android:id="@+id/dipinjamtext"
         android:layout_width="48dp"
         android:layout_height="15dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="14dp"
         android:gravity="top"
         android:text="@string/dipinjam"
         android:textAppearance="@style/taskbar_ganyala"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/katalogtext" />
 
     <TextView
-        android:id="@+id/home_taskbar5"
-        android:layout_width="48dp"
+        android:id="@+id/reviewtext"
+        android:layout_width="39dp"
         android:layout_height="15dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="14dp"
         android:gravity="top"
         android:text="@string/review2"
         android:textAppearance="@style/taskbar_ganyala"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.744"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/dipinjamtext" />
 
     <TextView
-        android:id="@+id/home_taskbar6"
-        android:layout_width="48dp"
+        android:id="@+id/accounttext"
+        android:layout_width="28dp"
         android:layout_height="15dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="14dp"
         android:gravity="top"
         android:text="@string/akun"
         android:textAppearance="@style/taskbar_ganyala"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.953"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/reviewtext" />
 
     <ScrollView
         android:id="@+id/scrollView2"
