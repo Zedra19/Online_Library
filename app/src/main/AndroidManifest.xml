@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".BacaBukuActivity"
+            android:exported="false" />
+        <activity
             android:name=".DetailBukuActivity"
             android:exported="false"
             android:label="@string/title_activity_detail_buku"

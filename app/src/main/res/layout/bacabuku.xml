@@ -73,7 +73,7 @@
         app:layout_constraintTop_toBottomOf="@+id/judul">
 
         <TextView
-            android:id="@+id/isi_summary"
+            android:id="@+id/isi_buku"
             android:layout_width="343dp"
             android:layout_height="83dp"
             android:justificationMode="inter_word"

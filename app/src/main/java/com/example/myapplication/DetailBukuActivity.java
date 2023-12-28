@@ -3,9 +3,12 @@ package com.example.myapplication;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.firebase.database.DataSnapshot;
@@ -18,7 +21,7 @@ public class DetailBukuActivity extends AppCompatActivity {
 
 
     private DatabaseReference mDatabase;
-    TextView judul, penulis, jumlah_halaman, bahasa, tanggal_terbit, sinopsis;
+    TextView judul, penulis, jumlah_halaman, bahasa, tanggal_terbit, sinopsis, baca;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +38,9 @@ public class DetailBukuActivity extends AppCompatActivity {
         tanggal_terbit = findViewById(R.id.tanggal_terbit);
         sinopsis = findViewById(R.id.isi_summary);
 
+        baca = findViewById(R.id.button_baca);
+
+
         mDatabase = FirebaseDatabase.getInstance().getReference("Buku");
 
         mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -49,6 +55,14 @@ public class DetailBukuActivity extends AppCompatActivity {
                     tanggal_terbit.setText(snapshot.child(String.valueOf(idBuku)).child("Tanggal Terbit").getValue(String.class));
                     sinopsis.setText(snapshot.child(String.valueOf(idBuku)).child("Sinopsis").getValue(String.class));
                 }
+                baca.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(DetailBukuActivity.this, BacaBukuActivity.class);
+                        intent.putExtra("ID_Buku", idBuku);
+                        startActivity(intent);
+                    }
+                });
             }
 
             @Override
@@ -56,6 +70,7 @@ public class DetailBukuActivity extends AppCompatActivity {
 
             }
         });
+
 
 
     }

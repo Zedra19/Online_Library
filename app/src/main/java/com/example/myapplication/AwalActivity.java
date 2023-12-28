@@ -27,7 +27,7 @@ public class AwalActivity extends AppCompatActivity {
         btnmulai.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(AwalActivity.this, SignupActivity.class);
+                Intent intent = new Intent(AwalActivity.this, SigninActivity.class);
                 startActivity(intent);
             }
         });
