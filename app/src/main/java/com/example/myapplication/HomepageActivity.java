@@ -35,6 +35,34 @@ public class HomepageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HomepageActivity.this, DetailBukuActivity.class);
+                intent.putExtra("ID_Buku", 1);
+                startActivity(intent);
+            }
+        });
+
+        buku2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomepageActivity.this, DetailBukuActivity.class);
+                intent.putExtra("ID_Buku", 2);
+                startActivity(intent);
+            }
+        });
+
+        buku3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomepageActivity.this, DetailBukuActivity.class);
+                intent.putExtra("ID_Buku", 3);
+                startActivity(intent);
+            }
+        });
+
+        buku4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomepageActivity.this, DetailBukuActivity.class);
+                intent.putExtra("ID_Buku", 4);
                 startActivity(intent);
             }
         });
