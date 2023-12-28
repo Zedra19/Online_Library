@@ -110,9 +110,9 @@
 
     <ImageButton
         android:id="@+id/imageHome"
-        android:layout_width="24dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="42dp"
+        android:layout_width="32dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="39dp"
         android:layout_marginTop="23dp"
         android:layout_marginBottom="2dp"
         app:layout_constraintBottom_toTopOf="@+id/hometext"
@@ -122,9 +122,9 @@
 
     <ImageButton
         android:id="@+id/imageKatalog"
-        android:layout_width="18dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="49dp"
+        android:layout_width="32dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="39dp"
         android:layout_marginTop="25dp"
         android:layout_marginBottom="3dp"
         app:layout_constraintBottom_toTopOf="@+id/katalogtext"
@@ -134,9 +134,9 @@
 
     <ImageButton
         android:id="@+id/imageDipinjam"
-        android:layout_width="24dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="56dp"
+        android:layout_width="32dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="44dp"
         android:layout_marginTop="23dp"
         android:layout_marginBottom="3dp"
         app:layout_constraintBottom_toTopOf="@+id/dipinjamtext"
@@ -146,22 +146,21 @@
 
     <ImageButton
         android:id="@+id/imageReview"
-        android:layout_width="24dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="53dp"
+        android:layout_width="32dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="44dp"
         android:layout_marginTop="23dp"
-        android:layout_marginBottom="3dp"
         app:layout_constraintBottom_toTopOf="@+id/reviewtext"
         app:layout_constraintStart_toEndOf="@+id/imageDipinjam"
         app:layout_constraintTop_toTopOf="@+id/taskbar"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.6"
         app:srcCompat="@drawable/icon_message" />
 
     <ImageButton
         android:id="@+id/imageAccount"
-        android:layout_width="24dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="51dp"
+        android:layout_width="32dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="42dp"
         android:layout_marginTop="23dp"
         android:layout_marginBottom="3dp"
         app:layout_constraintBottom_toTopOf="@+id/accounttext"
