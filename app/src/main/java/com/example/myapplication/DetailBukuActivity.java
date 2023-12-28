@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.google.firebase.database.DataSnapshot;
@@ -22,7 +23,7 @@ public class DetailBukuActivity extends AppCompatActivity {
 
     private DatabaseReference mDatabase;
     TextView judul, penulis, jumlah_halaman, bahasa, tanggal_terbit, sinopsis, baca;
-
+    ImageButton home, dipinjam, review, akun;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,11 +38,47 @@ public class DetailBukuActivity extends AppCompatActivity {
         bahasa = findViewById(R.id.bahasa);
         tanggal_terbit = findViewById(R.id.tanggal_terbit);
         sinopsis = findViewById(R.id.isi_summary);
+        home = findViewById(R.id.imageHome);
+        dipinjam = findViewById(R.id.imageDipinjam);
+        review = findViewById(R.id.imageReview);
+        akun = findViewById(R.id.imageAccount);
 
         baca = findViewById(R.id.button_baca);
 
 
         mDatabase = FirebaseDatabase.getInstance().getReference("Buku");
+
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DetailBukuActivity.this, HomepageActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        dipinjam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DetailBukuActivity.this, DipinjamActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        review.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DetailBukuActivity.this, ReviewActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        akun.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DetailBukuActivity.this, AccountActivity.class);
+                startActivity(intent);
+            }
+        });
 
         mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -70,8 +107,5 @@ public class DetailBukuActivity extends AppCompatActivity {
 
             }
         });
-
-
-
     }
 }
