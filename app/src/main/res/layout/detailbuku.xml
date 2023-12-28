@@ -109,14 +109,14 @@
         android:layout_height="30dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="20dp"
         android:gravity="left|center"
         android:text="@string/penulis"
         android:textAppearance="@style/detail_buku"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.187" />
+        app:layout_constraintVertical_bias="0.194" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -207,13 +207,12 @@
         android:id="@+id/imageView2"
         android:layout_width="24dp"
         android:layout_height="24dp"
+        android:layout_marginTop="296dp"
         android:layout_marginEnd="12dp"
-        app:layout_constraintBottom_toBottomOf="@+id/home_taskbar4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.554"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.364"
         app:srcCompat="@drawable/icon_tanggal_terbit" />
 
     <TextView
@@ -265,7 +264,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.679" />
-
 
 
     <View
@@ -485,8 +483,8 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="360dp"
-        android:layout_height="105dp"
+        android:layout_width="341dp"
+        android:layout_height="109dp"
         android:layout_marginBottom="12dp"
         android:fillViewport="true"
         app:layout_constraintBottom_toTopOf="@+id/button_baca"
