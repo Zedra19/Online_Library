@@ -71,6 +71,5 @@ public class HomepageActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
     }
 }
