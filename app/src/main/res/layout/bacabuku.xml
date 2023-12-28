@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <View
+        android:id="@+id/rectangle_1"
+        android:layout_width="0dp"
+        android:layout_height="85dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#163062"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="28dp"
+        android:gravity="left|top"
+        android:text="Judul"
+        android:textAppearance="@style/lexend"
+        android:textColor="#E7EBFE"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/backicon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="344dp"
+        android:background="@drawable/left_arrow"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/taskbar"
+        android:layout_width="393dp"
+        android:layout_height="77dp"
+        android:background="@drawable/taskbar"
+        android:gravity="center_horizontal|center"
+        android:textAppearance="@style/poppins"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="352dp"
+        android:layout_height="660dp"
+        android:layout_marginTop="44dp"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/judul">
+
+        <TextView
+            android:id="@+id/isi_summary"
+            android:layout_width="343dp"
+            android:layout_height="83dp"
+            android:justificationMode="inter_word"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor id eu nisl nunc mi ipsum. Mi quis hendrerit dolor magna. Tortor consequat id porta nibh venenatis cras. Enim sit amet venenatis urna cursus. Scelerisque purus semper eget duis at tellus at urna condimentum. Aenean vel elit scelerisque mauris. Tellus mauris a diam maecenas sed. Donec enim diam vulputate ut pharetra sit amet. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit. Scelerisque viverra mauris in aliquam sem fringilla ut. Dictum non consectetur a erat nam at lectus urna. Ac tortor dignissim convallis aenean.
+Est placerat in egestas erat. Risus feugiat in ante metus. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit. Cras ornare arcu dui vivamus arcu felis bibendum ut tristique. Tempus iaculis urna id volutpat lacus. Egestas sed tempus urna et pharetra pharetra massa massa ultricies. Orci dapibus ultrices in iaculis nunc. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Pharetra magna ac placerat vestibulum lectus. Consectetur adipiscing elit ut aliquam purus sit amet luctus venenatis. Arcu dictum varius duis at consectetur. Leo integer malesuada nunc vel risus commodo viverra maecenas. Interdum varius sit amet mattis vulputate."
+            android:textAppearance="@style/inter"
+            android:textSize="12sp" />
+
+
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/imageStar"
+        android:layout_width="55dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/taskbar"
+        app:srcCompat="@drawable/icon_star" />
+
+    <TextView
+        android:id="@+id/votetext"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="top"
+        android:text="Vote"
+        android:textAppearance="@style/taskbar_nyala"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageStar" />
+
+    <ImageButton
+        android:id="@+id/imageReview"
+        android:layout_width="56dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/imageStar"
+        app:layout_constraintTop_toTopOf="@+id/taskbar"
+        app:srcCompat="@drawable/icon_review" />
+
+    <TextView
+        android:id="@+id/reviewtext"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="5dp"
+        android:gravity="top"
+        android:text="10K"
+        android:textAppearance="@style/taskbar_nyala"
+        app:layout_constraintStart_toEndOf="@+id/votetext"
+        app:layout_constraintTop_toBottomOf="@+id/imageReview" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
