@@ -122,7 +122,7 @@
         app:layout_constraintBottom_toTopOf="@+id/katalogtext"
         app:layout_constraintStart_toEndOf="@+id/imageHome"
         app:layout_constraintTop_toTopOf="@+id/taskbar"
-        app:srcCompat="@drawable/icon_book" />
+        app:srcCompat="@drawable/book_selected" />
 
     <ImageButton
         android:id="@+id/imageDipinjam"
@@ -152,13 +152,13 @@
         android:id="@+id/imageAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
         android:layout_marginBottom="3dp"
         app:layout_constraintBottom_toTopOf="@+id/accounttext"
         app:layout_constraintStart_toEndOf="@+id/imageReview"
         app:layout_constraintTop_toTopOf="@+id/taskbar"
-        app:srcCompat="@drawable/user_selected" />
+        app:srcCompat="@drawable/icon_user" />
 
     <TextView
         android:id="@+id/hometext"
