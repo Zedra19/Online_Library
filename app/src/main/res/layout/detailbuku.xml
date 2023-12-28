@@ -279,33 +279,35 @@
 
     <TextView
         android:id="@+id/detail_buku"
-        android:layout_width="103dp"
-        android:layout_height="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:layout_marginTop="28dp"
         android:gravity="left|top"
-        android:text="@string/detail_buku"
+        android:text="Detail Buku"
         android:textAppearance="@style/lexend"
         android:textColor="#E7EBFE"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/rectangle_1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.033" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="26dp"
-        android:layout_height="26dp"
-        android:layout_marginBottom="34dp"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle_1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.084"
-        app:layout_constraintStart_toStartOf="@+id/rectangle_1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/icon_cart" />
+    <ImageButton
+        android:id="@+id/carticon"
+        android:layout_width="28dp"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="344dp"
+        android:background="@drawable/icon_cart"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/review"
@@ -364,74 +366,76 @@
 
     <ImageButton
         android:id="@+id/imageHome"
-        android:layout_width="32dp"
-        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
         android:layout_marginTop="23dp"
         android:layout_marginBottom="2dp"
+        android:background="@android:color/transparent"
         app:layout_constraintBottom_toTopOf="@+id/hometext"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/taskbar"
-        app:srcCompat="@drawable/home_not"
-        android:background="@android:color/transparent"/>
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/home_not" />
 
     <ImageButton
         android:id="@+id/imageKatalog"
-        android:layout_width="32dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="43dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
         android:layout_marginTop="25dp"
         android:layout_marginBottom="3dp"
+        android:background="@android:color/transparent"
         app:layout_constraintBottom_toTopOf="@+id/katalogtext"
         app:layout_constraintStart_toEndOf="@+id/imageHome"
         app:layout_constraintTop_toTopOf="@+id/taskbar"
-        app:srcCompat="@drawable/book_selected"
-        android:background="@android:color/transparent"/>
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/book_selected" />
 
     <ImageButton
         android:id="@+id/imageDipinjam"
-        android:layout_width="32dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="44dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
         android:layout_marginTop="23dp"
         android:layout_marginBottom="3dp"
+        android:background="@android:color/transparent"
         app:layout_constraintBottom_toTopOf="@+id/dipinjamtext"
         app:layout_constraintStart_toEndOf="@+id/imageKatalog"
         app:layout_constraintTop_toTopOf="@+id/taskbar"
-        app:srcCompat="@drawable/icon_bookmark"
-        android:background="@android:color/transparent"/>
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/icon_bookmark" />
 
     <ImageButton
         android:id="@+id/imageReview"
-        android:layout_width="32dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="44dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
         android:layout_marginTop="23dp"
+        android:background="@android:color/transparent"
         app:layout_constraintBottom_toTopOf="@+id/reviewtext"
         app:layout_constraintStart_toEndOf="@+id/imageDipinjam"
         app:layout_constraintTop_toTopOf="@+id/taskbar"
-        app:layout_constraintVertical_bias="0.6"
-        app:srcCompat="@drawable/icon_message"
-        android:background="@android:color/transparent"/>
+        app:srcCompat="@drawable/icon_message" />
 
     <ImageButton
         android:id="@+id/imageAccount"
-        android:layout_width="32dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="23dp"
+        android:layout_width="27dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="25dp"
         android:layout_marginBottom="3dp"
+        android:background="@android:color/transparent"
         app:layout_constraintBottom_toTopOf="@+id/accounttext"
         app:layout_constraintStart_toEndOf="@+id/imageReview"
         app:layout_constraintTop_toTopOf="@+id/taskbar"
-        app:srcCompat="@drawable/icon_user"
-        android:background="@android:color/transparent"/>
+        app:srcCompat="@drawable/icon_user" />
 
     <TextView
         android:id="@+id/hometext"
-        android:layout_width="45dp"
+        android:layout_width="wrap_content"
         android:layout_height="15dp"
-        android:layout_marginStart="38dp"
+        android:layout_marginStart="35dp"
         android:layout_marginBottom="14dp"
         android:gravity="top"
         android:text="@string/home"
@@ -441,7 +445,7 @@
 
     <TextView
         android:id="@+id/katalogtext"
-        android:layout_width="42dp"
+        android:layout_width="wrap_content"
         android:layout_height="15dp"
         android:layout_marginStart="32dp"
         android:layout_marginBottom="14dp"
@@ -453,7 +457,7 @@
 
     <TextView
         android:id="@+id/dipinjamtext"
-        android:layout_width="48dp"
+        android:layout_width="wrap_content"
         android:layout_height="15dp"
         android:layout_marginStart="32dp"
         android:layout_marginBottom="14dp"
@@ -465,7 +469,7 @@
 
     <TextView
         android:id="@+id/reviewtext"
-        android:layout_width="39dp"
+        android:layout_width="wrap_content"
         android:layout_height="15dp"
         android:layout_marginStart="32dp"
         android:layout_marginBottom="14dp"
@@ -477,9 +481,9 @@
 
     <TextView
         android:id="@+id/accounttext"
-        android:layout_width="28dp"
+        android:layout_width="wrap_content"
         android:layout_height="15dp"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="38dp"
         android:layout_marginBottom="14dp"
         android:gravity="top"
         android:text="@string/akun"
