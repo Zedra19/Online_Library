@@ -50,7 +50,8 @@
         app:layout_constraintBottom_toTopOf="@+id/hometext"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/taskbar"
-        app:srcCompat="@drawable/home_not" />
+        app:srcCompat="@drawable/home_not"
+        android:background="@android:color/transparent"/>
 
     <ImageButton
         android:id="@+id/imageKatalog"
@@ -62,7 +63,8 @@
         app:layout_constraintBottom_toTopOf="@+id/katalogtext"
         app:layout_constraintStart_toEndOf="@+id/imageHome"
         app:layout_constraintTop_toTopOf="@+id/taskbar"
-        app:srcCompat="@drawable/icon_book" />
+        app:srcCompat="@drawable/icon_book"
+        android:background="@android:color/transparent"/>
 
     <ImageButton
         android:id="@+id/imageDipinjam"
@@ -74,7 +76,8 @@
         app:layout_constraintBottom_toTopOf="@+id/dipinjamtext"
         app:layout_constraintStart_toEndOf="@+id/imageKatalog"
         app:layout_constraintTop_toTopOf="@+id/taskbar"
-        app:srcCompat="@drawable/icon_bookmark" />
+        app:srcCompat="@drawable/icon_bookmark"
+        android:background="@android:color/transparent"/>
 
     <ImageButton
         android:id="@+id/imageReview"
@@ -86,7 +89,8 @@
         app:layout_constraintStart_toEndOf="@+id/imageDipinjam"
         app:layout_constraintTop_toTopOf="@+id/taskbar"
         app:layout_constraintVertical_bias="0.6"
-        app:srcCompat="@drawable/review_selected" />
+        app:srcCompat="@drawable/review_selected"
+        android:background="@android:color/transparent"/>
 
     <ImageButton
         android:id="@+id/imageAccount"
@@ -98,7 +102,8 @@
         app:layout_constraintBottom_toTopOf="@+id/accounttext"
         app:layout_constraintStart_toEndOf="@+id/imageReview"
         app:layout_constraintTop_toTopOf="@+id/taskbar"
-        app:srcCompat="@drawable/icon_user" />
+        app:srcCompat="@drawable/icon_user"
+        android:background="@android:color/transparent"/>
 
     <TextView
         android:id="@+id/hometext"

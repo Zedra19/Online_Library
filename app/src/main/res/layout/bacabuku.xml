@@ -80,7 +80,8 @@
             android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor id eu nisl nunc mi ipsum. Mi quis hendrerit dolor magna. Tortor consequat id porta nibh venenatis cras. Enim sit amet venenatis urna cursus. Scelerisque purus semper eget duis at tellus at urna condimentum. Aenean vel elit scelerisque mauris. Tellus mauris a diam maecenas sed. Donec enim diam vulputate ut pharetra sit amet. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit. Scelerisque viverra mauris in aliquam sem fringilla ut. Dictum non consectetur a erat nam at lectus urna. Ac tortor dignissim convallis aenean.
 Est placerat in egestas erat. Risus feugiat in ante metus. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit. Cras ornare arcu dui vivamus arcu felis bibendum ut tristique. Tempus iaculis urna id volutpat lacus. Egestas sed tempus urna et pharetra pharetra massa massa ultricies. Orci dapibus ultrices in iaculis nunc. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Pharetra magna ac placerat vestibulum lectus. Consectetur adipiscing elit ut aliquam purus sit amet luctus venenatis. Arcu dictum varius duis at consectetur. Leo integer malesuada nunc vel risus commodo viverra maecenas. Interdum varius sit amet mattis vulputate."
             android:textAppearance="@style/inter"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            />
 
 
     </ScrollView>
@@ -93,7 +94,8 @@ Est placerat in egestas erat. Risus feugiat in ante metus. Feugiat scelerisque v
         android:layout_marginTop="4dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/taskbar"
-        app:srcCompat="@drawable/icon_star" />
+        app:srcCompat="@drawable/icon_star"
+        android:background="@android:color/transparent"/>
 
     <TextView
         android:id="@+id/votetext"
@@ -117,7 +119,8 @@ Est placerat in egestas erat. Risus feugiat in ante metus. Feugiat scelerisque v
         android:layout_marginTop="4dp"
         app:layout_constraintStart_toEndOf="@+id/imageStar"
         app:layout_constraintTop_toTopOf="@+id/taskbar"
-        app:srcCompat="@drawable/icon_review" />
+        app:srcCompat="@drawable/icon_review"
+        android:background="@android:color/transparent"/>
 
     <TextView
         android:id="@+id/reviewtext"
