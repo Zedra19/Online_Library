@@ -110,21 +110,21 @@
 
     <ImageButton
         android:id="@+id/imageHome"
-        android:layout_width="32dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="44dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="23dp"
         android:layout_marginBottom="2dp"
         app:layout_constraintBottom_toTopOf="@+id/hometext"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/taskbar"
-        app:srcCompat="@drawable/icon_home" />
+        app:srcCompat="@drawable/home_not" />
 
     <ImageButton
         android:id="@+id/imageKatalog"
-        android:layout_width="32dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="43dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="25dp"
         android:layout_marginBottom="3dp"
         app:layout_constraintBottom_toTopOf="@+id/katalogtext"
@@ -134,9 +134,9 @@
 
     <ImageButton
         android:id="@+id/imageDipinjam"
-        android:layout_width="32dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="44dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="23dp"
         android:layout_marginBottom="3dp"
         app:layout_constraintBottom_toTopOf="@+id/dipinjamtext"
@@ -146,9 +146,9 @@
 
     <ImageButton
         android:id="@+id/imageReview"
-        android:layout_width="32dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="44dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="23dp"
         app:layout_constraintBottom_toTopOf="@+id/reviewtext"
         app:layout_constraintStart_toEndOf="@+id/imageDipinjam"
@@ -158,31 +158,31 @@
 
     <ImageButton
         android:id="@+id/imageAccount"
-        android:layout_width="32dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="23dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="30dp"
         android:layout_marginBottom="3dp"
         app:layout_constraintBottom_toTopOf="@+id/accounttext"
         app:layout_constraintStart_toEndOf="@+id/imageReview"
         app:layout_constraintTop_toTopOf="@+id/taskbar"
-        app:srcCompat="@drawable/icon_user" />
+        app:srcCompat="@drawable/user_selected" />
 
     <TextView
         android:id="@+id/hometext"
-        android:layout_width="45dp"
+        android:layout_width="wrap_content"
         android:layout_height="15dp"
-        android:layout_marginStart="38dp"
+        android:layout_marginStart="35dp"
         android:layout_marginBottom="14dp"
         android:gravity="top"
         android:text="@string/home"
-        android:textAppearance="@style/taskbar_nyala"
+        android:textAppearance="@style/taskbar_ganyala"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/katalogtext"
-        android:layout_width="42dp"
+        android:layout_width="wrap_content"
         android:layout_height="15dp"
         android:layout_marginStart="32dp"
         android:layout_marginBottom="14dp"
@@ -194,7 +194,7 @@
 
     <TextView
         android:id="@+id/dipinjamtext"
-        android:layout_width="48dp"
+        android:layout_width="wrap_content"
         android:layout_height="15dp"
         android:layout_marginStart="32dp"
         android:layout_marginBottom="14dp"
@@ -206,7 +206,7 @@
 
     <TextView
         android:id="@+id/reviewtext"
-        android:layout_width="39dp"
+        android:layout_width="wrap_content"
         android:layout_height="15dp"
         android:layout_marginStart="32dp"
         android:layout_marginBottom="14dp"
@@ -218,13 +218,13 @@
 
     <TextView
         android:id="@+id/accounttext"
-        android:layout_width="28dp"
+        android:layout_width="wrap_content"
         android:layout_height="15dp"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="38dp"
         android:layout_marginBottom="14dp"
         android:gravity="top"
         android:text="@string/akun"
-        android:textAppearance="@style/taskbar_ganyala"
+        android:textAppearance="@style/taskbar_nyala"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/reviewtext" />
 
