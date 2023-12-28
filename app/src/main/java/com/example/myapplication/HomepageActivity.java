@@ -11,7 +11,7 @@ import android.widget.ImageButton;
 
 public class HomepageActivity extends AppCompatActivity {
 
-    ImageButton katalog, dipinjam, review, akun;
+    ImageButton homepage, katalog, dipinjam, review, akun;
     ImageButton buku1, buku2, buku3, buku4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +21,7 @@ public class HomepageActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.beranda);
 
+        homepage = findViewById(R.id.imageHome);
         katalog = findViewById(R.id.imageKatalog);
         dipinjam = findViewById(R.id.imageDipinjam);
         review = findViewById(R.id.imageReview);

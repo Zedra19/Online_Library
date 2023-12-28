@@ -266,23 +266,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.679" />
 
-    <TextView
-        android:id="@+id/isi_summary"
-        android:layout_width="343dp"
-        android:layout_height="83dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:gravity="left|top"
-        android:justificationMode="inter_word"
-        android:text="@string/isi_summary"
-        android:textAppearance="@style/inter"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.56"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.563" />
+
 
     <View
         android:id="@+id/rectangle_1"
@@ -500,5 +484,27 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.953"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="346dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="12dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/button_baca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/judul">
+
+        <TextView
+            android:id="@+id/isi_summary"
+            android:layout_width="343dp"
+            android:layout_height="83dp"
+            android:justificationMode="inter_word"
+            android:text="Filosofi Teras, diawali dengan menceritakan tentang sebuah survei kekhawatiran nasional yang semakin masif sekaligus menyajikan tentang sekilas kehidupan si penulis yang dipenuhi oleh emosi negatif yang berlebihan. Dalam buku ini dijelaskan bahwa penyebab emosi negatif atau kecemasan yang berlebihan disebabkan oleh rasio atau pola pikir yang keliru. Pada akhirnya, penulis menyarankan para pembaca untuk memperbaiki pola pikir yang keliru tersebut, dengan salah satu contohnya ialah menerapkan filsafat Stoa (Stoikisme) yang pada buku tersebut kemudian diterjemahkan sebagai 'Filsafat Teras' dalam kehidupan sehari-hari. Dalam buku tersebut, filsafat Stoa digambarkan secara sederhana dengan inti dikotomi kendali nasib manusia, sehingga dari dikotomi kendali tersebut, manusia dapat menentukan hal-hal yang dapat membuatnya bahagia maupun tidak."
+            android:textAppearance="@style/inter"
+            android:textSize="12sp" />
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
