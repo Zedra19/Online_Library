@@ -110,7 +110,7 @@
         app:layout_constraintBottom_toTopOf="@+id/hometext"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/taskbar"
-        app:srcCompat="@drawable/icon_home" />
+        app:srcCompat="@drawable/home_not" />
 
     <ImageButton
         android:id="@+id/imageKatalog"
@@ -122,7 +122,7 @@
         app:layout_constraintBottom_toTopOf="@+id/katalogtext"
         app:layout_constraintStart_toEndOf="@+id/imageHome"
         app:layout_constraintTop_toTopOf="@+id/taskbar"
-        app:srcCompat="@drawable/icon_book" />
+        app:srcCompat="@drawable/book_selected" />
 
     <ImageButton
         android:id="@+id/imageDipinjam"
@@ -168,7 +168,7 @@
         android:layout_marginBottom="14dp"
         android:gravity="top"
         android:text="@string/home"
-        android:textAppearance="@style/taskbar_nyala"
+        android:textAppearance="@style/taskbar_ganyala"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -180,7 +180,7 @@
         android:layout_marginBottom="14dp"
         android:gravity="top"
         android:text="@string/katalog"
-        android:textAppearance="@style/taskbar_ganyala"
+        android:textAppearance="@style/taskbar_nyala"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/hometext" />
 

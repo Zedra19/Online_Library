@@ -50,7 +50,7 @@
         app:layout_constraintBottom_toTopOf="@+id/hometext"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/taskbar"
-        app:srcCompat="@drawable/icon_home" />
+        app:srcCompat="@drawable/home_not" />
 
     <ImageButton
         android:id="@+id/imageKatalog"
@@ -86,7 +86,7 @@
         app:layout_constraintStart_toEndOf="@+id/imageDipinjam"
         app:layout_constraintTop_toTopOf="@+id/taskbar"
         app:layout_constraintVertical_bias="0.6"
-        app:srcCompat="@drawable/icon_message" />
+        app:srcCompat="@drawable/review_selected" />
 
     <ImageButton
         android:id="@+id/imageAccount"
@@ -108,7 +108,7 @@
         android:layout_marginBottom="14dp"
         android:gravity="top"
         android:text="@string/home"
-        android:textAppearance="@style/taskbar_nyala"
+        android:textAppearance="@style/taskbar_ganyala"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -144,7 +144,7 @@
         android:layout_marginBottom="14dp"
         android:gravity="top"
         android:text="@string/review2"
-        android:textAppearance="@style/taskbar_ganyala"
+        android:textAppearance="@style/taskbar_nyala"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/dipinjamtext" />
 
@@ -168,7 +168,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="44dp"
         android:gravity="center_horizontal|bottom"
-        android:text="@string/review"
+        android:text="Ulasan"
         android:textAppearance="@style/beranda"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -182,7 +182,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:gravity="center_horizontal|top"
-        android:text="belum ada review"
+        android:text="Belum ada ulasan"
         android:textAppearance="@style/nobook"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

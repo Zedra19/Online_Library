@@ -52,7 +52,7 @@ public class AccountActivity extends AppCompatActivity {
         review.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AccountActivity.this, AccountActivity.class);
+                Intent intent = new Intent(AccountActivity.this, ReviewActivity.class);
                 startActivity(intent);
             }
         });
