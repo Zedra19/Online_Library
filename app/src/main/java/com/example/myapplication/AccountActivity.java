@@ -11,8 +11,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 
 public class AccountActivity extends AppCompatActivity {
-    ImageButton home, katalog, dipinjam, review;
-    ImageView keluar;
+    ImageButton home, katalog, dipinjam, review, keluar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
