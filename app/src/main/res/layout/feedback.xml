@@ -5,16 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <View
-        android:id="@+id/rectangle_1"
-        android:layout_width="0dp"
-        android:layout_height="78dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:background="#163062"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
     <TextView
         android:id="@+id/detail_buku"
         android:layout_width="wrap_content"
@@ -35,34 +25,30 @@
     <TextView
         android:id="@+id/taskbar"
         android:layout_width="0dp"
-        android:layout_height="800dp"
-        android:layout_marginTop="60dp"
+        android:layout_height="850dp"
         android:background="@drawable/taskbar"
-        android:gravity="center_horizontal|center"
         android:text="@string/signin"
         android:textAppearance="@style/poppins"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/rectangle_1" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/isi_review2"
-        android:layout_width="145dp"
-        android:layout_height="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:gravity="left|top"
+        android:layout_marginTop="120dp"
         android:text="@string/isi_review"
         android:textAppearance="@style/inter"
         android:textColor="#404040"
         android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="@+id/taskbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.282"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.184" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/backicon"
@@ -71,7 +57,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/sendicon"
         android:rotation="225"
         app:layout_constraintStart_toStartOf="parent"
@@ -81,17 +67,16 @@
         android:id="@+id/user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
         android:gravity="center_vertical"
         android:text="@string/user1"
         android:textAppearance="@style/poppins"
         android:textColor="#000000"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.216"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.157" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/isi_review3"
@@ -99,7 +84,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="132dp"
         android:gravity="left|top"
         android:text="2 Jam Lalu"
         android:textAppearance="@style/inter"
@@ -108,7 +92,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.427"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/rectangle_1" />
+        tools:layout_editor_absoluteY="102dp" />
 
     <View
         android:id="@+id/cover_detail2"
@@ -116,13 +100,12 @@
         android:layout_height="34dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
         android:background="@drawable/coverdetail"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.073"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.165" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/judul"
@@ -130,15 +113,14 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
         android:gravity="left|top"
         android:text="@string/judul"
         android:textAppearance="@style/detail_buku"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <ImageView

@@ -504,7 +504,7 @@
     </ScrollView>
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/Feedback"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"

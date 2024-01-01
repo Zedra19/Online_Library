@@ -10,6 +10,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.firebase.database.DataSnapshot;
@@ -24,6 +25,7 @@ public class DetailBukuActivity extends AppCompatActivity {
     private DatabaseReference mDatabase;
     TextView judul, penulis, jumlah_halaman, bahasa, tanggal_terbit, sinopsis, baca;
     ImageButton home, dipinjam, review, akun;
+    ImageView feedback;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +45,7 @@ public class DetailBukuActivity extends AppCompatActivity {
         review = findViewById(R.id.imageReview);
         akun = findViewById(R.id.imageAccount);
 
+        feedback = findViewById(R.id.Feedback);
         baca = findViewById(R.id.button_baca);
 
 
@@ -80,6 +83,13 @@ public class DetailBukuActivity extends AppCompatActivity {
             }
         });
 
+        feedback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DetailBukuActivity.this, FeedbackActivity.class);
+                startActivity(intent);
+            }
+        });
         mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
