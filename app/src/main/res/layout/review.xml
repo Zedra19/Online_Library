@@ -28,18 +28,41 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <View
+        android:id="@+id/rectangle_2"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="43dp"
+        android:background="#163062"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_1" />
+
+    <View
+        android:id="@+id/cover_detail3"
+        android:layout_width="90dp"
+        android:layout_height="130dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/coverdetail"
+        app:layout_constraintBottom_toBottomOf="@id/rectangle_2"
+        app:layout_constraintEnd_toEndOf="@id/rectangle_2"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="@id/rectangle_2"
+        app:layout_constraintTop_toTopOf="@id/rectangle_2"
+        app:layout_constraintVertical_bias="0.4" />
+
     <ImageButton
         android:id="@+id/imageHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
-        android:layout_marginTop="23dp"
         android:layout_marginBottom="2dp"
         android:background="@android:color/transparent"
         app:layout_constraintBottom_toTopOf="@+id/hometext"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/taskbar"
-        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/home_not" />
 
     <ImageButton
@@ -47,13 +70,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="53dp"
-        android:layout_marginTop="25dp"
         android:layout_marginBottom="3dp"
         android:background="@android:color/transparent"
         app:layout_constraintBottom_toTopOf="@+id/katalogtext"
         app:layout_constraintStart_toEndOf="@+id/imageHome"
-        app:layout_constraintTop_toTopOf="@+id/taskbar"
-        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/icon_book" />
 
     <ImageButton
@@ -61,13 +81,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="55dp"
-        android:layout_marginTop="23dp"
         android:layout_marginBottom="3dp"
         android:background="@android:color/transparent"
         app:layout_constraintBottom_toTopOf="@+id/dipinjamtext"
         app:layout_constraintStart_toEndOf="@+id/imageKatalog"
-        app:layout_constraintTop_toTopOf="@+id/taskbar"
-        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/icon_bookmark" />
 
     <ImageButton
@@ -75,11 +92,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="51dp"
-        android:layout_marginTop="23dp"
         android:background="@android:color/transparent"
         app:layout_constraintBottom_toTopOf="@+id/reviewtext"
         app:layout_constraintStart_toEndOf="@+id/imageDipinjam"
-        app:layout_constraintTop_toTopOf="@+id/taskbar"
         app:srcCompat="@drawable/review_selected" />
 
     <ImageButton
@@ -87,12 +102,10 @@
         android:layout_width="27dp"
         android:layout_height="31dp"
         android:layout_marginStart="45dp"
-        android:layout_marginTop="25dp"
         android:layout_marginBottom="3dp"
         android:background="@android:color/transparent"
         app:layout_constraintBottom_toTopOf="@+id/accounttext"
         app:layout_constraintStart_toEndOf="@+id/imageReview"
-        app:layout_constraintTop_toTopOf="@+id/taskbar"
         app:srcCompat="@drawable/icon_user" />
 
     <TextView
@@ -154,7 +167,6 @@
         android:textAppearance="@style/taskbar_ganyala"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/reviewtext" />
-
     <TextView
         android:id="@+id/reviewheader"
         android:layout_width="wrap_content"
@@ -173,17 +185,52 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/noreview"
-        android:layout_width="312dp"
-        android:layout_height="27dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:gravity="center_horizontal|top"
-        android:text="Belum ada ulasan"
-        android:textAppearance="@style/nobook"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/judulBuku"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:text="JudulBuku"
+        android:textAppearance="@style/lexend"
+        android:textColor="#E7EBFE"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@id/rectangle_2"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="@id/rectangle_2"
+        app:layout_constraintTop_toTopOf="@id/rectangle_2" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="225dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+
+        app:layout_constraintStart_toEndOf="@id/cover_detail3"
+        app:layout_constraintTop_toBottomOf="@id/judulBuku"
+        app:srcCompat="@drawable/searchview_rounded" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="200dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="12dp"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="@id/imageView5"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@id/imageView5"
+        app:layout_constraintTop_toBottomOf="@id/judulBuku">
+
+        <TextView
+            android:id="@+id/isi_summary"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="Filosofi Teras, diawali dengan menceritakan tentang sebuah survei kekhawatiran nasional yang semakin masif sekaligus menyajikan tentang sekilas kehidupan si penulis yang dipenuhi oleh emosi negatif yang berlebihan. Dalam buku ini dijelaskan bahwa penyebab emosi negatif atau kecemasan yang berlebihan disebabkan oleh rasio atau pola pikir yang keliru. Pada akhirnya, penulis menyarankan para pembaca untuk memperbaiki pola pikir yang keliru tersebut, dengan salah satu contohnya ialah menerapkan filsafat Stoa (Stoikisme) yang pada buku tersebut kemudian diterjemahkan sebagai 'Filsafat Teras' dalam kehidupan sehari-hari. Dalam buku tersebut, filsafat Stoa digambarkan secara sederhana dengan inti dikotomi kendali nasib manusia, sehingga dari dikotomi kendali tersebut, manusia dapat menentukan hal-hal yang dapat membuatnya bahagia maupun tidak."
+            android:textAppearance="@style/inter"
+            android:textSize="12sp" />
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
