@@ -11,6 +11,7 @@ import android.widget.ImageButton;
 
 public class KatalogActivity extends AppCompatActivity {
     ImageButton home, dipinjam, review, akun;
+    ImageButton buku1, buku2, buku3, buku4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,46 @@ public class KatalogActivity extends AppCompatActivity {
         review = findViewById(R.id.imageReview);
         akun = findViewById(R.id.imageAccount);
 
+        buku1 = findViewById(R.id.matahari);
+        buku2 = findViewById(R.id.filTeras);
+        buku3 = findViewById(R.id.dearJohn);
+        buku4 = findViewById(R.id.harrypot);
+
+        buku1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(KatalogActivity.this, DetailBukuActivity.class);
+                intent.putExtra("ID_Buku", 1);
+                startActivity(intent);
+            }
+        });
+
+        buku2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(KatalogActivity.this, DetailBukuActivity.class);
+                intent.putExtra("ID_Buku", 2);
+                startActivity(intent);
+            }
+        });
+
+        buku3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(KatalogActivity.this, DetailBukuActivity.class);
+                intent.putExtra("ID_Buku", 3);
+                startActivity(intent);
+            }
+        });
+
+        buku4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(KatalogActivity.this, DetailBukuActivity.class);
+                intent.putExtra("ID_Buku", 4);
+                startActivity(intent);
+            }
+        });
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

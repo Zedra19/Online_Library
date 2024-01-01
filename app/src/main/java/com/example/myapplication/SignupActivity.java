@@ -43,7 +43,14 @@ public class SignupActivity extends AppCompatActivity {
         btnregister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (checkValidasi()){
+                String username = inputUsername.getText().toString();
+                String fullname = inputFullname.getText().toString();
+                String email = inputEmail.getText().toString();
+                String address = inputAddress.getText().toString();
+                String phonenumber = inputPhoneNumber.getText().toString();
+                String password = inputPassword.getText().toString();
+
+                if (checkValidasi(username, fullname, email, address, phonenumber, password)){
                     mDatabase.child("User").child(inputUsername.getText().toString()).child("Email").setValue(inputEmail.getText().toString());
                     mDatabase.child("User").child(inputUsername.getText().toString()).child("Fullname").setValue(inputFullname.getText().toString());
                     mDatabase.child("User").child(inputUsername.getText().toString()).child("Password").setValue(inputPassword.getText().toString());
@@ -64,13 +71,7 @@ public class SignupActivity extends AppCompatActivity {
         });
     }
 
-    private boolean checkValidasi(){
-        String username = inputUsername.getText().toString();
-        String fullname = inputFullname.getText().toString();
-        String email = inputEmail.getText().toString();
-        String address = inputAddress.getText().toString();
-        String phonenumber = inputPhoneNumber.getText().toString();
-        String password = inputPassword.getText().toString();
+    public boolean checkValidasi(String username, String fullname, String email, String address, String phonenumber, String password){
         boolean flag = false;
 
         if (username.isEmpty()){
@@ -94,7 +95,7 @@ public class SignupActivity extends AppCompatActivity {
         if(phonenumber.isEmpty()){
             showError(inputPhoneNumber, "Phone number can't be empty.");
         }
-        else if(!containsNumber(phonenumber)){
+        else if(!containsOnlyNumbers(phonenumber)){
             showError(inputPhoneNumber, "Phone number can only contains number.");
         }
         else if(phonenumber.length() > 13 || phonenumber.length() < 10){
@@ -119,24 +120,23 @@ public class SignupActivity extends AppCompatActivity {
         return flag;
     }
 
-    private void showError(EditText input, String s){
+    public void showError(EditText input, String s){
         input.setError(s);
         input.requestFocus();
     }
-    private boolean containsSymbol(String password) {
+    public boolean containsSymbol(String password) {
         Pattern pattern = Pattern.compile("[!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>\\/?]");
         Matcher matcher = pattern.matcher(password);
         return matcher.find();
     }
-    private boolean containsCapitalLetter(String password) {
+    public boolean containsCapitalLetter(String password) {
         Pattern pattern = Pattern.compile("[A-Z]");
         Matcher matcher = pattern.matcher(password);
         return matcher.find();
     }
-    private boolean containsNumber(String password) {
-        Pattern pattern = Pattern.compile("[0-9]");
-        Matcher matcher = pattern.matcher(password);
-        return matcher.find();
+    public boolean containsOnlyNumbers(String input) {
+        return input.matches("[0-9]+");
     }
+
 }
 
